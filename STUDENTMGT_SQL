@@ -1,0 +1,29 @@
+ DROP TABLE IF EXISTS studentmgt;
+
+CREATE TABLE studentmgt(
+ student_id INTEGER PRIMARY KEY,
+  studentname VARCHAR(20),
+  adm_no INTEGER,
+  marks INTEGER,
+  email VARCHAR(30)
+);
+
+--alter table 
+ALTER TABLE studentmgt
+RENAME COLUMN marks TO student_marks;
+
+
+DROP TABLE IF EXISTS studentback_up;
+--create table 
+CREATE TABLE studentback_up AS SELECT*FROM studentmgt;
+
+DROP TABLE studentback_up;
+
+
+
+DROP OK
+CREATE OK
+ALTER OK
+DROP OK
+CREATE OK
+DROP OK
